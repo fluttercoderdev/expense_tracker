@@ -19,8 +19,8 @@ class ExpenseItem extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // \$ is used to display the amount with two decimal places 
-                Text('\$${expense.amount.toStringAsFixed(2)}'), 
+                // \$ is used to display the amount with two decimal places
+                Text('\$${expense.amount.toStringAsFixed(2)}'),
                 Text(expense.date.toString()),
               ],
             ),
