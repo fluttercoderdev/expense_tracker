@@ -36,7 +36,7 @@ class _ExpensesState extends State<Expenses> {
     ),
 
     Expense(
-      title: 'New Shoes',
+      title: 'Train Ticket',
       amount: 69.99,
       date: DateTime.now(),
       category: Category.travel,

@@ -21,7 +21,14 @@ class ExpenseItem extends StatelessWidget {
               children: [
                 // \$ is used to display the amount with two decimal places
                 Text('\$${expense.amount.toStringAsFixed(2)}'),
-                Text(expense.date.toString()),
+                const Spacer(),
+                Row(
+                  children: [
+                    Icon(categoryIcons[expense.category]),
+                    const SizedBox(width: 8),
+                    Text(expense.formattedDate),
+                  ],
+                ),
               ],
             ),
           ],
